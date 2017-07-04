@@ -1,0 +1,38 @@
+{
+  "name": "ip-query",
+  "version": "0.0.1",
+  "description": "query ip location using ipb ip databases",
+  "main": "index.js",
+  "scripts": {
+    "benchmark": "node benchmark",
+    "coverage": "istanbul cover _mocha -- -R spec --timeout 5000 --recursive",
+    "coverage:check": "istanbul check-coverage",
+    "lint": "eslint -c .eslintrc.yml .",
+    "mocha": "mocha -R spec --recursive --bail",
+    "test": "npm run lint && npm run coverage && npm run coverage:check"
+  },
+  "repository": "git+https://github.com/liuwill/ip-query.git",
+  "keywords": [
+    "ip",
+    "geo",
+    "code",
+    "binary"
+  ],
+  "author": "liuwill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuwill/ip-query/issues"
+  },
+  "homepage": "https://github.com/liuwill/ip-query#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "eslint": "^4.1.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2",
+    "rimraf": "^2.6.1",
+    "sinon": "^2.3.6"
+  },
+  "dependencies": {
+    "lru-cache": "^4.1.1"
+  }
+}
