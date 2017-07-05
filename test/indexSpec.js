@@ -20,13 +20,10 @@ describe('ipQuery', function () {
     watchCount = 0
 
     sinon.spy(fs, 'readFile')
-    var watchStub = sinon.stub(fs, 'watch').callsFake(function (path, callback) { watchHandler = callback })
+    sinon.stub(fs, 'watch').callsFake(function (path, callback) { watchHandler = callback })
   });
 
   describe('sync()', function () {
-    // it('should thrown when file is not exist', function () {
-    //   expect(function () { ipQuery.loadDBSync("data/none") }).to.throw()
-    // });
 
     it('should read sample data', function () {
       var ipDatabase = ipQuery.loadDBSync(sampleFilePath)
@@ -35,9 +32,6 @@ describe('ipQuery', function () {
   });
 
   describe('async()', function () {
-    // it('should thrown when file is not exist', function () {
-    //   expect(function () { ipQuery.loadDB("data/none") }).to.throw()
-    // });
 
     it('should read sample data', function (done) {
       ipQuery.loadDB(sampleFilePath, function (err, ipDatabase) {
@@ -71,6 +65,7 @@ describe('ipQuery', function () {
     it('should call when read err', function (done) {
       ipQuery.loadDB("sampleFilePath", function (err, ipDatabase) {
         assert.isNotNull(err)
+        expect(ipDatabase).to.be.a('undefined')
         done()
       })
     });

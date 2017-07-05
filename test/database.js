@@ -25,6 +25,8 @@ describe('lib/database', function () {
 
       assert.isObject(ipDatabase)
       assert.isFunction(ipDatabase.find)
+      var loc = ipDatabase.find('58.24.0.15')
+      expect(loc).to.not.be.empty
     });
   });
 });

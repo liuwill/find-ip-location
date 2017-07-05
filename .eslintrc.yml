@@ -2,6 +2,7 @@
   globals:
     describe: true
     it: true
+    before: true
   env:
     browser: true
     node: true
@@ -77,7 +78,7 @@
       -
         builtinGlobals: true        #不允许重复声明
     no-unused-expressions:
-      - 2
+      - 1
       -
         allowShortCircuit: true
         allowTernary: true                    #不执行的表达式

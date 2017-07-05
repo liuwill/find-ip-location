@@ -6,10 +6,6 @@ var database = require('./lib/database')
 
 exports.loadDB = function (dbPath, callback) {
   assert(typeof callback, 'function', 'Callback function must be provided.')
-  // assert(dbPath, 'dat file path must be provided.')
-  // if(!fs.existsSync(dbPath)){
-  //   throw new Error("file is not exist")
-  // }
 
   fs.readFile(dbPath, function (err, bufferData) {
     if (err) {
@@ -30,11 +26,6 @@ exports.loadDB = function (dbPath, callback) {
 }
 
 exports.loadDBSync = function (dbPath) {
-  // assert(dbPath, 'dat file path must be provided.')
-  // if(!fs.existsSync(dbPath)){
-  //   throw new Error("file is not exist")
-  // }
-
   var bufferData = fs.readFileSync(dbPath)
   var bufferDb = database.create(bufferData)
 
