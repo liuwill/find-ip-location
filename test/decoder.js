@@ -1,12 +1,12 @@
-'use strict';
+'use strict'
 
-var chai = require('chai');
+var chai = require('chai')
 
-chai.should();
-var expect = chai.expect;
-var assert = chai.assert;
+chai.should()
+var expect = chai.expect
+var assert = chai.assert
 
-var decoder = require('../lib/decoder');
+var decoder = require('../lib/decoder')
 
 describe('lib/decoder', function () {
   describe('parse()', function () {

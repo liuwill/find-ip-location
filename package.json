@@ -1,5 +1,5 @@
 {
-  "name": "ip-query",
+  "name": "find-ip-location",
   "version": "0.0.1",
   "description": "query ip location using ipb ip databases",
   "main": "index.js",
@@ -7,11 +7,12 @@
     "benchmark": "node benchmark",
     "coverage": "istanbul cover _mocha -- -R spec --timeout 5000 --recursive",
     "coverage:check": "istanbul check-coverage",
+    "coverall": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint -c .eslintrc.yml .",
     "mocha": "mocha -R spec --recursive --bail",
     "test": "npm run lint && npm run coverage && npm run coverage:check"
   },
-  "repository": "git+https://github.com/liuwill/ip-query.git",
+  "repository": "git+https://github.com/liuwill/find-ip-location.git",
   "keywords": [
     "ip",
     "geo",
@@ -21,11 +22,12 @@
   "author": "liuwill <liuwill@live.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/liuwill/ip-query/issues"
+    "url": "https://github.com/liuwill/find-ip-location/issues"
   },
-  "homepage": "https://github.com/liuwill/ip-query#readme",
+  "homepage": "https://github.com/liuwill/find-ip-location#readme",
   "devDependencies": {
     "chai": "^4.0.2",
+    "coveralls": "^2.13.1",
     "eslint": "^4.1.1",
     "istanbul": "^0.4.5",
     "mocha": "^3.4.2",
