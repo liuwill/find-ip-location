@@ -7,7 +7,6 @@
     node: true
   rules:
     #no-param-reassign: 0
-    #no-extra-semi: 2
     #semi: [2 never]
     indent: [error, 2]
 
@@ -56,7 +55,7 @@
         beforeColon: false
         afterColon: true                    #object直接量建议写法 : 后一个空格前面不留空格
     block-scoped-var: 2                    #变量应在外部上下文中声明，不应在{}代码块中
-    consistent-return: 2                   #函数返回值可能是不同类型
+    consistent-return: 1                   #函数返回值可能是不同类型
     accessor-pairs: 2                      #object getter/setter方法需要成对出现
     dot-location:
       - 2
