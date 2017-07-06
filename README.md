@@ -9,7 +9,7 @@
 ## Installation
 
 ```shell
-$ npm i -S find-ip-location
+$ npm install --save find-ip-location
 ```
 
 ## Usage：
@@ -18,6 +18,8 @@ $ npm i -S find-ip-location
 var ipQuery = require("find-ip-location")
 ipQuery.find('66.6.44.4')
 ```
+
+返回的参数包含：["startIP", "endIP", "code", "province", "hanCity", "city", "isoCode", 'provinceCode', 'cityCode', 'countryCode', 'country']
 
 ## License
 
