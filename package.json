@@ -1,6 +1,6 @@
 {
   "name": "find-ip-location",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "query ip location using ipb ip databases",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/liuwill/find-ip-location#readme",
   "devDependencies": {
+    "benchmark": "^2.1.4",
     "chai": "^4.0.2",
     "coveralls": "^2.13.1",
     "eslint": "^4.1.1",
@@ -33,8 +34,5 @@
     "mocha": "^3.4.2",
     "rimraf": "^2.6.1",
     "sinon": "^2.3.6"
-  },
-  "dependencies": {
-    "lru-cache": "^4.1.1"
   }
 }

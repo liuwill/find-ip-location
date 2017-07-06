@@ -4,4 +4,5 @@ coverage
 node_modules
 npm-debug.log*
 yarn-error.log*
-data/ip_db.development.dat
+data/ip.development.db
+data/ip.production.db
