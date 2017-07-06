@@ -4,12 +4,12 @@
   [![NPM version][npm-image]][npm-url]
   [![npm download][download-image]][download-url]
 
-========
+参考[maxmind](https://github.com/runk/node-maxmind)实现的纯javascript地址库；基于[ipb](http://iac-i.org/#)提供的付费ip地址库实现ip地址解析，中国国内的地址精确到省市，国外的精确到国家。需要使用配套工具将提供的ip地址库文件，转换成工具需要的二进制格式文件。该地址库主要针对中国国内的ip地址解析。
 
 ## Installation
 
 ```shell
-npm i -S find-ip-location
+$ npm i -S find-ip-location
 ```
 
 ## Usage：

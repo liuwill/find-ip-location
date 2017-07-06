@@ -10,7 +10,7 @@ chai.should()
 var expect = chai.expect
 var assert = chai.assert
 
-var sampleFilePath = __dirname + '/../data/ip_db.sample.dat'
+var sampleFilePath = __dirname + '/../data/ip.sample.db'
 
 describe('ipQuery', function () {
   var watchHandler
