@@ -11,6 +11,7 @@ var expect = chai.expect
 var assert = chai.assert
 
 var sampleFilePath = __dirname + '/../data/ip.sample.db'
+var IPDatabase = require('../lib/database').IPDatabase
 
 describe('ipQuery', function () {
   var watchHandler
@@ -24,10 +25,20 @@ describe('ipQuery', function () {
   });
 
   describe('sync()', function () {
+    var ipDatabase
+    before(function () {
+      ipDatabase = ipQuery.loadDBSync(sampleFilePath)
+    })
 
     it('should read sample data', function () {
-      var ipDatabase = ipQuery.loadDBSync(sampleFilePath)
+      assert.instanceOf(ipDatabase, IPDatabase)
       assert.isFunction(ipDatabase.find)
+    });
+
+    it('should find china city', function () {
+      var locData = ipDatabase.find('61.136.112.25')
+      expect(locData).to.be.an('object')
+      expect(locData).to.deep.include({isoCode: 'CN'});
     });
   });
 
