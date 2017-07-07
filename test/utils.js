@@ -6,7 +6,6 @@ var utils = require('../lib/utils')
 
 chai.should()
 var expect = chai.expect
-var assert = chai.assert
 
 describe('lib/utils', function () {
   describe('getRawDataFromBuffer()', function () {

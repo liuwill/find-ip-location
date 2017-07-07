@@ -20,7 +20,7 @@ describe('lib/decoder', function () {
     it('location parser', function () {
       var locData = decoder.parseLocation('210.39.104.0,210.39.107.255,1156440100,广东省,广州市,guangzhou,CN')
 
-      expect(locData).to.not.be.empty
+      assert.isNotNull(locData, 'location should exist')
       expect(locData).to.have.all.keys(decoder.TARGET_LOCATION_FIELDS)
 
       expect(locData).to.have.property('city', 'guangzhou')

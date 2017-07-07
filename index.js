@@ -9,14 +9,16 @@ exports.loadDB = function (dbPath, callback) {
 
   fs.readFile(dbPath, function (err, bufferData) {
     if (err) {
-      return callback(err)
+      callback(err)
+      return
     }
 
     var bufferDb = database.create(bufferData)
     fs.watch(dbPath, function () {
       fs.readFile(dbPath, function (err, bufferData) {
         if (err) {
-          return callback(err)
+          callback(err)
+          return
         }
         bufferDb.reload(bufferData)
       })

@@ -40,7 +40,7 @@ describe('lib/database', function () {
 
     it('should find china Municipality city', function () {
       var loc = ipDatabase.find('223.255.236.15')
-      expect(loc).to.not.be.empty
+      assert.isNotNull(loc, 'location should exist')
       expect(loc).to.have.all.keys(decoder.TARGET_LOCATION_FIELDS)
 
       expect(loc).to.have.property('city', 'shanghai')
@@ -49,7 +49,7 @@ describe('lib/database', function () {
 
     it('should find china region', function () {
       var loc = ipDatabase.find('223.254.250.44')
-      expect(loc).to.not.be.empty
+      assert.isNotNull(loc, 'location should exist')
       expect(loc).to.have.all.keys(decoder.TARGET_LOCATION_FIELDS)
 
       expect(loc).to.have.property('city', 'taiwan')
@@ -58,7 +58,7 @@ describe('lib/database', function () {
 
     it('should find country out of china', function () {
       var loc = ipDatabase.find('14.102.156.88')
-      expect(loc).to.not.be.empty
+      assert.isNotNull(loc, 'location should exist')
       expect(loc).to.have.all.keys(decoder.TARGET_LOCATION_FIELDS)
 
       expect(loc).to.have.property('country', '日本')
