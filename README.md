@@ -55,5 +55,5 @@ ipQuery.loadDB(sampleFilePath, (err, ipFinder) => {
 [quality-url]: https://codeclimate.com/github/liuwill/find-ip-location
 [bithound-image]: https://img.shields.io/bithound/code/github/liuwill/find-ip-location.svg?style=flat-square
 [bithound-url]: https://www.bithound.io/github/liuwill/find-ip-location
-[appveyor-image]: https://img.shields.io/appveyor/ci/gruntjs/grunt/master.svg?style=flat-square
+[appveyor-image]: https://img.shields.io/appveyor/ci/liuwill/find-ip-location/master.svg?style=flat-square
 [appveyor-url]: https://ci.appveyor.com/project/liuwill/find-ip-location

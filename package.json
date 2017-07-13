@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "benchmark": "node benchmark",
-    "coverage": "istanbul cover _mocha -- -R spec --timeout 5000 --recursive",
+    "coverage": "istanbul cover node_modules/mocha/bin/_mocha -- -R spec --timeout 5000 --recursive",
     "coverage:check": "istanbul check-coverage",
-    "coverall": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "coverall": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "lint": "eslint -c .eslintrc.yml .",
     "mocha": "mocha -R spec --recursive --bail",
     "test": "npm run lint && npm run coverage && npm run coverage:check"
