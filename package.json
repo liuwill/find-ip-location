@@ -1,6 +1,6 @@
 {
   "name": "find-ip-location",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "query ip location using ipb ip databases",
   "main": "index.js",
   "scripts": {

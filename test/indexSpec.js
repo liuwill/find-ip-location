@@ -2,7 +2,7 @@
 
 var fs = require('fs')
 var chai = require('chai')
-var sinon = require('sinon');
+var sinon = require('sinon')
 
 var ipQuery = require('../index')
 
