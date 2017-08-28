@@ -1,5 +1,6 @@
 # find-ip-location
   [![Build Status][travis-image]][travis-url]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fliuwill%2Ffind-ip-location.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fliuwill%2Ffind-ip-location?ref=badge_shield)
   [![AppVeyor branch][appveyor-image]][appveyor-url]
   [![Coverage Status][coverage-image]][coverage-url]
   [![NPM version][npm-image]][npm-url]
@@ -57,3 +58,6 @@ ipQuery.loadDB(sampleFilePath, (err, ipFinder) => {
 [bithound-url]: https://www.bithound.io/github/liuwill/find-ip-location
 [appveyor-image]: https://img.shields.io/appveyor/ci/liuwill/find-ip-location/master.svg?style=flat-square
 [appveyor-url]: https://ci.appveyor.com/project/liuwill/find-ip-location
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fliuwill%2Ffind-ip-location.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2Fliuwill%2Ffind-ip-location?ref=badge_large)
