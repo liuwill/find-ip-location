@@ -3,7 +3,6 @@
   [![AppVeyor branch][appveyor-image]][appveyor-url]
   [![Coverage Status][coverage-image]][coverage-url]
   [![NPM version][npm-image]][npm-url]
-  [![bitHound][bithound-image]][bithound-url]
   [![Maintainability][maintainability-image]][maintainability-url]
 
 参考[maxmind](https://github.com/runk/node-maxmind)实现的纯javascript地址库；基于[ipb](http://iac-i.org/#)提供的付费ip地址库实现ip地址解析，中国国内的地址精确到省市，国外的精确到国家。需要使用配套工具将提供的ip地址库文件，转换成工具需要的二进制格式文件。该地址库主要针对中国国内的ip地址解析。
